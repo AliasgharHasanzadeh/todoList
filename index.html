@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/favicon/site.webmanifest">
+    <!--  -->
+    <link rel="stylesheet" href="src/output.css">
+    <title>todo-list</title>
+</head>
+<body class="w-full h-[100vh]">
+        <header class="h-[30vh] flex flex-col justify-center items-center">
+            <h1 class="text-[60px] select-none mb-[20px]">Just Do it</h1>
+            <div class="flex justify-center items-center">
+                <input id="inp" class="bg-[#343a40] text-[#e9ecef] px-[10px] py-[3px] rounded-l-[20px] sm:w-[450px] w-full h-[40px] outline-none" type="text" placeholder="Write Your Task">
+                <button id="btn-addtask" class="bg-[#dee2e6] py-[3px] px-[5px] rounded-r-[20px] cursor-pointer h-[40px] sm:w-auto w-[100px] text-nowrap">I Got This!</button>
+            </div>
+            <span id="date" class="select-none mt-[5px] text-[#ced4da]"></span>
+        </header>
+        <main class="min-h-[70vh] flex justify-center items-start">
+            <ul id="tasks" class="w-full max-w-[450px] px-4 *:w-full *:text-[20px] *:bg-[#343a40] *:mb-[10px] *:text-[#ced4da] *:px-[7px] *:py-[4px] *:rounded-[8px] *:flex *:justify-between *:items-center *:gap-[10px]">
+            </ul>
+        </main>
+</body>
+<script src="src/script.js"></script>
+</html>
